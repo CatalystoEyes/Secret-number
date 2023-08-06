@@ -54,6 +54,7 @@ document.querySelector(".check").addEventListener('click', function(){
 
         document.querySelector('.again').addEventListener("click", function(){
             secretNumber = Math.trunc(Math.random()* 10) + 1
+            centerNumber.textContent = '?'
             document.querySelector(".score").textContent = 10
             score = 10
             document.body.style.cssText = `
