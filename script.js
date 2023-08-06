@@ -53,9 +53,9 @@ document.querySelector(".check").addEventListener('click', function(){
         }
 
         document.querySelector('.again').addEventListener("click", function(){
-            secretNumber = Math.trunc(Math.random()* 10) + 1
-            centerNumber.textContent = '?'
+            secretNumber = Math.trunc(Math.random() * 10) + 1
             document.querySelector(".score").textContent = 10
+            centerNumber.textContent = '?'
             score = 10
             document.body.style.cssText = `
             background: radial-gradient(
