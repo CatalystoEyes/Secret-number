@@ -20,9 +20,9 @@ document.querySelector(".check").addEventListener('click', function(){
         messageText("✔️Вы угадали!")
         centerNumber.textContent = guessNumber
         document.body.style.cssText = `
-        background: -webkit-linear-gradient(45deg, rgb(0, 255, 154), rgb(0, 255, 64));
-        background: -moz-linear-gradient(45deg, rgb(0, 255, 154), rgb(0, 255, 64));
-        background: linear-gradient(45deg, rgb(0, 255, 154), rgb(0, 255, 64));
+        background: -webkit-linear-gradient(45deg, rgb(0, 187, 55), rgb(60, 191, 174));
+        background: -moz-linear-gradient(45deg, rgb(0, 187, 55), rgb(60, 191, 174));
+        background: linear-gradient(45deg, rgb(0, 187, 55), rgb(60, 191, 174));
         `
         centerNumber.style.cssText = "border-color: #00CC66;"
         secretNumber = undefined
