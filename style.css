@@ -6,12 +6,16 @@
   box-sizing: inherit;
 }
 
-html {
+html, body {
+  height: 100vh;
+  overflow: hidden;
   font-size: 62.5%;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 body {
+
   font-family: "Roboto", sans-serif;
   color: #eee;
   background: radial-gradient(
@@ -27,7 +31,7 @@ header {
 }
 
 main {
-  height: 65vh;
+  height: 60vh;
   color: #eee;
   display: flex;
   align-items: center;
@@ -98,21 +102,27 @@ h1 {
 
 .btn {
   border: none;
-  border-radius: 1.2rem;
+  border-radius: 2rem;
   background-color: #eee;
   color: #222;
   font-size: 2rem;
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background: -webkit-linear-gradient(0deg, rgb(61, 68, 71), rgb(153, 210, 202));
+  background: -moz-linear-gradient(0deg, rgb(61, 68, 71), rgb(153, 210, 202));
+  background: linear-gradient(0deg, rgb(61, 68, 71), rgb(153, 210, 202));
+  color: white;
+  scale: 1.05;
 }
 
 .message {
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   height: 3rem;
   font-size: 2rem;
   font-weight: 500;
@@ -120,4 +130,37 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media(width < 500px){
+  h1{
+    font-size: 35px;
+  }
+  .message{
+    display: grid;
+    justify-self: center;
+  }
+  .label-score{
+    font-size: 0;
+  }
+  .label-highscore{
+    font-size: 0;
+  }
+  main{
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;;
+  }
+  .again{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .btn.again{
+    top: 1.5rem;
+    height: 8vh;
+    padding-top: 16px;
+  }
+  .between{
+    margin: 12px;
+  }
 }
